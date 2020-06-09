@@ -1,0 +1,6 @@
+framework module Login4ASDK {
+  umbrella header "Login4ASDK.h"
+
+  export *
+  module * { export * }
+}

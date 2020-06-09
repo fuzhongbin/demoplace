@@ -1,0 +1,47 @@
+
+
+//THIS IS FOR CORDOVA WITH VERSIO >= 6.3.0
+// configurations.all {
+//     resolutionStrategy {
+//         force 'com.android.support:support-v4:27.1.0'
+//     }
+// }
+
+// THIS IS FOR CORDOVA WITH VERSIO >= 6.4.0 (ANDROID STUDIO 3.0 RPOJECT MAYBE .....)
+//android {
+//    flavorDimensions "default"
+//}
+
+
+android {
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_7
+        targetCompatibility JavaVersion.VERSION_1_7
+    }
+
+    repositories { flatDir { dirs 'libs' } }
+
+    dependencies {
+       debugCompile 'com.amitshekhar.android:debug-db:1.0.0',
+       compile (name: 'appstore_sso-1.1.1', ext: 'aar')
+    }
+
+    allprojects {
+        configurations.all {
+            resolutionStrategy.force 'com.android.support:support-v4:24.0.0'
+        }
+    }
+
+	defaultConfig {
+        ndk {
+                abiFilters "armeabi", "armeabi-v7a", "x86", "mips"
+            }
+    }
+
+    // defaultConfig {
+    //     jackOptions {
+    //     enabled true
+    //     }
+    // }
+}

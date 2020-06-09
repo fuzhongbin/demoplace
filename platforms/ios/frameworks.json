@@ -1,0 +1,13 @@
+{
+    "UIKit.framework": 1,
+    "Foundation.framework": 1,
+    "CFNetwork.framework": 1,
+    "CoreTelephony.framework": 1,
+    "Security.framework": 1,
+    "SystemConfiguration.framework": 1,
+    "libsqlite3.tbd": 1,
+    "libsqlite3.0.tbd": 1,
+    "libxml2.tbd": 1,
+    "libz.1.tbd": 1,
+    "libz.1.2.5.tbd": 1
+}

@@ -1,0 +1,19 @@
+{
+  "ios": {
+    "debug": {
+      "codeSignIdentity": "iPhone Developer: 港 蔡 (HCTS2X4Y2D)",
+      "developmentTeam": "GEUX5D8A35",
+      "packageType": "development"
+    },
+    "release": {
+      "codeSignIdentity": "iPhone Distribution: China Southern Power GRID CO., LTD.",
+      "developmentTeam": "GEUX5D8A35",
+      "provisioningProfile": "7fc752de-9c77-4ca1-861f-ea72da6c6947",
+      "packageType": "enterprise",
+      "buildFlag": [
+        "EMBEDDED_CONTENT_CONTAINS_SWIFT = YES",
+        "ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES=NO"
+      ]
+    }
+  }
+}

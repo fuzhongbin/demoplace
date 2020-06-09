@@ -1,0 +1,29 @@
+{
+  "id": "io.cordova.hellocordova",
+  "android": {
+    "copy": [
+      {
+        "appid": "io.cordova.hellocordova",
+        "origin": "scripts/Base64Utils.java",
+        "target": "platforms/android/src/io/cordova/hellocordova/Base64Utils.java"
+      },
+      {
+        "appid": "io.cordova.hellocordova",
+        "origin": "scripts/MainActivity.java",
+        "target": "platforms/android/src/io/cordova/hellocordova/MainActivity.java"
+      },
+      {
+        "origin": "scripts/build-extras.gradle",
+        "target": "platforms/android/build-extras.gradle"
+      }
+    ]
+  },
+  "ios": {
+    "copy": [
+      {
+        "origin": "scripts/AppDelegate.m",
+        "target": "platforms/ios/ionic开始/Classes/AppDelegate.m"
+      }
+    ]
+  }
+}

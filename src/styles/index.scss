@@ -1,0 +1,92 @@
+html,
+body {
+  height: 100%;
+}
+
+body {
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+  font-family: Helvetica Neue, Helvetica, PingFang SC, Hiragino Sans GB, Microsoft YaHei, Arial, sans-serif;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+div:focus {
+  outline: none;
+}
+
+a:focus,
+a:active {
+  outline: none;
+}
+
+a,
+a:focus,
+a:hover {
+  cursor: pointer;
+  color: inherit;
+  text-decoration: none;
+}
+
+p {
+  margin: 0;
+}
+
+.clearfix {
+  &:after {
+    visibility: hidden;
+    display: block;
+    font-size: 0;
+    content: " ";
+    clear: both;
+    height: 0;
+  }
+}
+
+/* header start */
+
+.app-header {
+  height: 44px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #fff;
+  z-index: 999;
+
+  &_button {
+    height: 44px;
+    width: 60px;
+  }
+
+  &_title {
+    width: calc(100% - 120px);
+    height: 44px;
+    line-height: 44px;
+    text-align: center;
+  }
+}
+
+/* header end */
+
+/* app content start */
+
+.app-content {
+  margin: 16px 0;
+  padding: 0 16px;
+  height: calc(100vh - 44px - 32px);
+  overflow: scroll;
+}
+
+.app-tab-pages {
+  .app-content {
+    height: calc(100vh - 88px - 32px);
+  }
+}
+
+/* app content end */
