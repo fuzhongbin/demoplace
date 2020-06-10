@@ -41,7 +41,7 @@ export default {
           _self.ssoInfo = data;
           // this.localLogin(data);
           console.log(`sso login: ${success}`, `json parse: ${data}`);
-          console.log("登陆鼎信成功")
+          console.log("登陆鼎信成功aggdasgdsagdsgsa")
         },
         error => {
           _self.ssoStr = `获取信息失败请重新登录`;
